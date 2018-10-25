@@ -1,0 +1,37 @@
+# ignore via Dateiendungen
+*.bak
+*.class
+*.dll
+*.ear
+*.exe
+*.jar
+*.lck
+*.log
+*.war
+*.classpath
+*.project
+*.iml
+*~
+.svn
+**/com.jadiceweb.*
+**/com.google.*
+**/org.eclipse.wst.*
+
+# ignore via Pfade
+/notForGit
+.idea/
+**/bin
+**/out
+**/war
+**/bintest
+**/build
+**/hs_err_pid*
+**/target
+**/classes
+**/.gradle
+**/.settings
+
+# Ausnahmen
+!**/build.gradle
+!gradle/wrapper/gradle-wrapper.jar
+
