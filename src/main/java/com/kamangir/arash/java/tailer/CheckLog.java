@@ -52,4 +52,16 @@ public class CheckLog {
          r.run();
       }
    }
+
+   /**
+    * One thread for every Runnable.
+    */
+   static class ThreadPerTaskExecutor implements Executor {
+
+      static final ThreadPerTaskExecutor instance = new ThreadPerTaskExecutor();
+
+      public void execute(final Runnable r) {
+        new Thread(r).start();
+      }
+    }
 }
